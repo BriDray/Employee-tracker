@@ -1,4 +1,4 @@
-USE company;
+USE business;
 INSERT INTO departments (name)
 VALUES
  ("Sales"),

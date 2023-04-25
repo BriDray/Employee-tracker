@@ -1,6 +1,6 @@
 const mysql = require("mysql2");
 
-require('dotenv').config()
+require('dotenv').config();
 
 // Connect to database
 const db = mysql.createConnection(
@@ -12,7 +12,7 @@ const db = mysql.createConnection(
     password: process.env.DB_PW,
     database: process.env.DB_NAME
   },
-  console.log("Connected to the company database.")
+  console.log("Connected to the business database.")
 );
 
 module.exports = db;
