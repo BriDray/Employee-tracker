@@ -1,14 +1,15 @@
-USE business;
-DROP TABLE IF EXISTS dpartments;
-DROP TABLE IF EXISTS titles;
+USE business_db;
 DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS titles;
+DROP TABLE IF EXISTS departments;
 
 CREATE TABLE departments (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE titles (
+CREATE TABLE roles (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL NOT NULL,
@@ -20,8 +21,8 @@ CREATE TABLE employees (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,
-  title_id INTEGER,
+  role_id INTEGER,
   manager_id INTEGER,
-  CONSTRAINT fk_title FOREIGN KEY (title_id) REFERENCES titles(id) ON DELETE SET NULL,
+  CONSTRAINT fk_title FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE SET NULL,
   CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employees(id) ON DELETE SET NULL
 );
