@@ -4,12 +4,11 @@
 
 # Table of Contents
 * [User Story](#user)
-* [Usage](#usage)
 * [Description](#description)
-* [Github Link](#github)
-* [Motivation for Development](#motivation)
 * [Technologies Used](#technologies)
-* [Future Development](#hopes)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Github Link](#github)
 * [Questions](#questions)
 
 # User Story
@@ -28,8 +27,38 @@ https://user-images.githubusercontent.com/118693956/234458305-bf9baa05-3fcf-462f
 * console.table
 * mysql2
 
-# Usage
+# Installation
+run the following in the terminal:
+```
+npm install mysql2
+```
 
+```
+npm install inquirer
+```
+
+```
+npm install console.table --save
+```
+
+# Usage
+After Installation. Be sure to be signed into your mysql.
+
+```
+mysql -u (username) -p
+```
+Then you'll be prompted to enter your password.
+Once you confirm that you're signed in. Close mysql by entering 
+
+```
+exit
+```
+Then you want to run the program by entering the command below into the terminal.
+```
+npm start
+```
+
+Lastly, follow the prompts on screen!
 
 # Github Link
 This project will not be deployed to github.
