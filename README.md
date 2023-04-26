@@ -21,7 +21,7 @@ SO THAT I can organize and plan my business
 # Description
 The Employee Tracker is an easy way to track all your Departments, roles, salary, and employees!
 
-![Home Project Screenshot](/public/images/signinshot.png?raw=true "Home1")
+https://user-images.githubusercontent.com/118693956/234458305-bf9baa05-3fcf-462f-ad54-fbf91fcfacf8.mp4
 
 # Technologies Used
 * inquireer@8.2.4
